@@ -1,0 +1,117 @@
+{
+  "cells": [
+    "x",
+    "y",
+    "z",
+    "cloud"
+  ],
+  "masked": [
+    "cloud"
+  ],
+  "events": [
+    {
+      "obs": "A",
+      "rev": 1,
+      "origin": "s1",
+      "value": 1e+16,
+      "weight": 1.0,
+      "foot": {
+        "x": 0.75,
+        "y": 0.25
+      },
+      "partial": "renormalize"
+    },
+    {
+      "obs": "A",
+      "rev": 1,
+      "origin": "s2",
+      "value": 1e+16,
+      "weight": 1.0,
+      "foot": {
+        "x": 0.75,
+        "y": 0.25
+      },
+      "partial": "renormalize"
+    },
+    {
+      "obs": "B",
+      "rev": 1,
+      "origin": "s1",
+      "value": -1e+16,
+      "weight": 1.0,
+      "foot": {
+        "x": 0.75,
+        "y": 0.25
+      },
+      "partial": "renormalize"
+    },
+    {
+      "obs": "C",
+      "rev": 1,
+      "origin": "s3",
+      "value": 1.0,
+      "weight": 1.0,
+      "foot": {
+        "x": 1.0
+      },
+      "partial": "renormalize"
+    },
+    {
+      "obs": "A",
+      "rev": 2,
+      "origin": "s2",
+      "value": 1e+16,
+      "weight": 1.0,
+      "foot": {
+        "z": 0.25,
+        "cloud": 0.75
+      },
+      "partial": "renormalize"
+    },
+    {
+      "obs": "D",
+      "rev": 1,
+      "origin": "s2",
+      "value": 0.0,
+      "weight": 1.0,
+      "foot": {
+        "z": 0.25,
+        "cloud": 0.75
+      },
+      "partial": "reject"
+    },
+    {
+      "obs": "B",
+      "rev": 2,
+      "origin": "s1",
+      "withdraw": true
+    }
+  ],
+  "delivery": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ],
+  "seeds": [
+    [
+      "x",
+      1.0
+    ],
+    [
+      "y",
+      0.5
+    ],
+    [
+      "z",
+      4.0
+    ]
+  ]
+}
